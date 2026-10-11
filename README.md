@@ -6,7 +6,7 @@ The download contains a short handoff checklist, fictional input, a standard-lib
 
 ## Try it in five minutes
 
-Unzip the download. Open a terminal in its folder, then run:
+Download [csv-handoff-kit-0.1.zip](https://github.com/pbishay545/csv-handoff-kit/raw/refs/heads/main/csv-handoff-kit-0.1.zip), unzip it, and open a terminal in its folder. Then run:
 
 ```text
 python -m unittest -v test_cleanup.py
@@ -41,7 +41,7 @@ The checklist applies more broadly; the code is a narrow educational sample. Agr
 
 ## Feedback that would help
 
-If this becomes publicly released, please report whether you could run the sample, whether the row counts reconciled, and which handoff step remained unclear. Use fictional or redacted examples. The next version will be chosen from actual requests rather than guessed integrations.
+Please report whether you could run the sample, whether the row counts reconciled, and which handoff step remained unclear. Use fictional or redacted examples. The next version will be chosen from actual requests rather than guessed integrations.
 
 ## License and provenance
 
