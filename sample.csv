@@ -1,0 +1,13 @@
+sku,item_name,order_date,quantity,unit_price,status,region,notes
+0001, Demo Widget A ,2026-10-01,02,12.50,pending,North, fictional record 
+0002,Demo Widget B,02 Oct 2026,3,9.00,SHIPPED,South,
+0002,Demo Widget B,02 Oct 2026,3,9.00,SHIPPED,South,
+0003,Demo Widget C,03/04/2026,1,20.00,pending,East,ambiguous date
+0004,Demo Widget D,2026-02-30,4,6.25,pending,West,invalid date
+0005,Demo Widget E,2026-10-05,5,4.00,shipped,North,
+0005,Demo Widget E,2026-10-05,6,4.00,shipped,North,conflicting quantity
+0006,Demo Widget F,2026-10-06,0,0.00,cancelled,South,valid zero
+0007,Demo Widget G,2026-10-07,2,"1,234",pending,East,unapproved numeric locale
+0008,Demo Widget H,2026-10-08,1,8.00,hold,West,unmapped status
+0009,,2026-10-09,1,3.00,pending,North,missing item name
+,,,,,,,
