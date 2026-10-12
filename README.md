@@ -46,3 +46,12 @@ Please report whether you could run the sample, whether the row counts reconcile
 ## License and provenance
 
 MIT licensed; see LICENSE. Created with AI assistance and tested against fictional data. This example demonstrates its stated rules; it does not claim customer use, certification or universal CSV support.
+
+
+### Need a custom CSV handoff?
+
+For a small CSV cleanup, you can ask about a fixed-scope paid adaptation of this workflow. A possible $25 USD pilot covers one CSV of up to 2,000 rows and eight columns, up to three agreed cleanup rules, a preserved source copy, a cleaned CSV, and a change/removal audit. Availability, feasibility, price, deadline and payment method must be confirmed separately before any work starts. This page does not place an order or collect payment.
+
+Email onlineprojects.hub@outlook.com with the column names, the result you need, your budget and your deadline. If an example helps, use three fictional rows in the message. Please omit customer records, passwords, verification links, API keys and other confidential information.
+
+The workflow uses an AI coding agent to prepare and test local processing. No prior paid clients or human review are claimed. Spreadsheet formulas/macros, workbook redesign, external-system access and sensitive personal data are outside this pilot. The free kit remains available under MIT; its existing eight-column sample is the demonstrated capability.
