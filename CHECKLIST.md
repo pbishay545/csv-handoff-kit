@@ -49,3 +49,5 @@ Unresolved: [questions requiring the owner's decision]
 Microsoft documents leading-zero removal and conversion of long numbers when Excel treats them as numeric data. Use controlled text/CSV import and set identifier columns to Text. Available conversion settings depend on the Excel version; verify the actual destination rather than assuming settings are present.
 
 Reference: [Microsoft: keeping leading zeros and large numbers](https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers). Checked 2026-10-11.
+
+Formula export reference: [OWASP CSV Injection](https://community.owasp.org/attacks/CSV_Injection), checked 2026-10-11. This example prefixes ASCII/full-width formula starts; original copies remain raw. CSV escapes can be removed during spreadsheet round trips. Native application safety is not verified.

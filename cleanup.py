@@ -75,7 +75,7 @@ def clean(rows):
 
 def spreadsheet_text(value):
     # CSV is an interchange format. Escape formula triggers for spreadsheet use.
-    return "'" + value if value.lstrip().startswith(('=', '+', '-', '@', '\t', '\r')) else value
+    return "'" + value if value.lstrip().startswith(('=', '+', '-', '@', '＝', '＋', '－', '＠')) else value
 
 
 def run(source, target):

@@ -1,15 +1,15 @@
-# CSV Handoff Kit — 0.1
+# CSV Handoff Kit — 0.1.1
 
 A worked example for developers who need to explain a CSV cleanup, preserve identifiers, and give the recipient a reviewable change record.
 
-The download contains a short handoff checklist, fictional input, a standard-library Python cleaner, and seven regression tests. Run it locally: no account, upload, API key or package install required. Python 3.9+ is required; the included preview has been tested on Python 3.12.
+The download contains a short handoff checklist, fictional input, a standard-library Python cleaner, and eight regression tests. Run it locally: no account, upload, API key or package install required. Python 3.9+ is required; the included preview has been tested on Python 3.12.
 
 ## Try it in five minutes
 
-Download [csv-handoff-kit-0.1.zip](https://github.com/pbishay545/csv-handoff-kit/raw/refs/heads/main/csv-handoff-kit-0.1.zip), unzip it, and open a terminal in its folder. Then run:
+Download [csv-handoff-kit-0.1.1.zip](https://github.com/pbishay545/csv-handoff-kit/raw/refs/heads/main/csv-handoff-kit-0.1.1.zip), unzip it, and open a terminal in its folder. Then run:
 
 ```text
-python -m unittest -v test_cleanup.py
+python -m unittest -v test_cleanup.py test_fullwidth.py
 python cleanup.py sample.csv first-run
 ```
 
@@ -35,7 +35,7 @@ sku,item_name,order_date,quantity,unit_price,status,region,notes
 
 It trims surrounding whitespace, normalizes ISO dates and dates like `02 Oct 2026`, accepts nonnegative integer quantities and dot-decimal prices, and maps pending/shipped/cancelled statuses. It removes fully blank rows and complete duplicates after those rules. Different rows sharing a SKU remain flagged for review. Zero quantities and prices are valid.
 
-Uncertain dates, unsupported numbers and missing values stay visible. Spreadsheet formula triggers are prefixed with an apostrophe in the cleaned export and recorded separately. The original byte copy is unchanged; import it as text rather than evaluating cells. No workbook, CRM, Shopify or arbitrary-schema integration is included.
+Uncertain dates, unsupported numbers and missing values stay visible. ASCII and full-width equals, plus, minus and at-sign formula triggers are prefixed with an apostrophe in the cleaned export and recorded separately. The original byte copy is unchanged; import it as text rather than evaluating cells. Prefixing is not a universal safety guarantee: native spreadsheet import and save/re-open behavior have not been tested. Keep controlled text import and review values after any round trip. No workbook, CRM, Shopify or arbitrary-schema integration is included.
 
 The checklist applies more broadly; the code is a narrow educational sample. Agree real transformation rules before adapting it. The audit contains source values, so keep real-data outputs local and share only with their authorized recipient.
 
